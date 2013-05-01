@@ -8,6 +8,7 @@ desc "Generate Docs"
 Rake::RDocTask.new("doc") { |rdoc|
   rdoc.rdoc_dir = 'doc'
   rdoc.title = 'Reve API Documentation'
+
   rdoc.options << '--line-numbers' << '--inline-source' << '--all'
   rdoc.rdoc_files.include('./ChangeLog')
   rdoc.rdoc_files.include('./README.rdoc')
